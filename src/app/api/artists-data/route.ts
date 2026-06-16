@@ -188,7 +188,7 @@ export async function GET() {
   console.log('[ArtistsAPI] Fetching fresh data (Concurrent)...');
   
   try {
-      // Netlify/Serverless Timeout Safety
+      // Serverless Timeout Safety
       // Stop processing new requests after 8000ms to ensure we return a response before the 10s hard limit
       const TIME_LIMIT = 8000;
       const startTime = Date.now();

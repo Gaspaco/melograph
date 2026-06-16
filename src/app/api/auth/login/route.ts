@@ -9,7 +9,7 @@ export async function POST(request: Request) {
     if (!process.env.DATABASE_URL || process.env.DATABASE_URL.includes('placeholder')) {
        console.error("Critical: DATABASE_URL is missing or is the placeholder.");
        return NextResponse.json({ 
-         error: 'Environment Configuration Error: DATABASE_URL is missing on Netlify. Please add it in Site Settings > Environment Variables.' 
+         error: 'Environment Configuration Error: DATABASE_URL is missing. Please add it in Vercel Environment Variables.' 
        }, { status: 500 });
     }
 

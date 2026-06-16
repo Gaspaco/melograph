@@ -1,6 +1,6 @@
 import { neon } from '@neondatabase/serverless';
 
-// Ensure you have DATABASE_URL in your .env or Netlify Environment Variables
+// Ensure you have DATABASE_URL in your .env or Vercel Environment Variables
 // Connection string format: postgres://user:pass@endpoint.neon.tech/neondb
 if (!process.env.DATABASE_URL) {
   console.warn('Warning: DATABASE_URL is not defined. Database operations will fail.');

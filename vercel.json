@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "builds": [
+    { "src": "next.config.ts", "use": "@vercel/next" },
+    { "src": "backend/main.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/_/backend(?:/(.*))?", "dest": "/backend/main.py" }
+  ]
+}
